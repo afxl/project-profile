@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Kumbh+Sans&family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Kumbh+Sans&family=Poppins:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Kumbh Sans", sans-serif;
+}
+body{
+    overflow: hidden;
+    height:100vh;
+    width: 100vw;
+    
+}
+.main{
+    background-color: hsl(185, 75%, 39%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    width: 50%;
+    height: 66%;
+    position: absolute;
+    top:0%;
+    left:0%;
+    overflow: hidden;
+}
+.top img{
+    transform: translate(-35% , -60%);
+}
+.bottom img{
+    transform: translate(0% , 2%);
+}
+.bottom{
+    width: 50%;
+    height: 50%;
+    overflow:hidden;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    overflow: hidden;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: auto;
+    position: absolute;
+    
+    background-color: white;
+    z-index: 2;
+    height: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:0 10px 10px 10px hsla(0, 0%, 30%,0.1);
+}
+.bg{
+    height: 35%;
+    border: 0;
+    width: 100%;
+}
+.profile{
+    height: 35%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    padding: 60px 0 0 0;
+    justify-content: space-evenly;
+    gap:10px;
+}
+.follow{
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1.5px hsl(0, 0%, 79%) solid;
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+}
+.bg img{
+    width: 100%;
+    height: 100%;
+}
+.num{
+    color: hsl(0, 0%, 59%);
+}
+.center{
+    margin: 0 0 0 40px;
+}
+.big{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+#dp{
+    position: absolute;
+    top:-30%;
+    right: 10%;
+    border:4px solid white;
+    overflow: hidden;
+    border-radius: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#dp img{
+   
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:410px) {
+    .card{
+        width:300px;
+    }
+}
